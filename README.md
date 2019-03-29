@@ -9,5 +9,5 @@ We built:
 * Jot
 * Mention
 
-[0]: https://www.pelberg.com
+[0]: http://pelberg.com
 [1]: https://jnoh.net
