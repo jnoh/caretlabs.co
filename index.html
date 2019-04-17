@@ -7,25 +7,58 @@
     <style>
       body {
         padding: 24px;
+        margin: 0;
+      }
+      #text {
+        width: 20vw;
+      }
+      #photo {
+        display: block;
+        float: right;
+        width: 80vw;
+      }
+      #photo img {
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        padding-left: 16px;
+      }
+      @media screen and (max-width: 800px) {
+        #text {
+          width: 100%;
+        }
+        #photo {
+          width: 100%;
+          float: none;
+          margin-bottom: 16px;
+        }
+        #photo img {
+          padding-left: 0;
+        }
       }
     </style>
   </head>
   <body style="background: #ffffff !important">
-    <div id="logo">
-      Caret Labs<br />
-      2014 - 2018
+    <div id="photo">
+      <img src="us.jpeg" />
     </div>
-    <p>
-      A software studio by Peter and Jeff
-    </p>
-    <p>
-      We built:
-    </p>
-    <ul>
-      <li>Baskets</li>
-      <li>Chalk</li>
-      <li>Jot</li>
-      <li>Mention</li>
-    </ul>
+    <div id="text">
+      <div id="logo">
+        Caret Labs<br />
+        2014 - 2018
+      </div>
+      <p>
+        A software studio by <a href="https://pelberg.com">Peter</a> and <a href="https://jnoh.net">Jeff</a>
+      </p>
+      <p>
+        We built:
+      </p>
+      <ul>
+        <li>Baskets</li>
+        <li>Chalk</li>
+        <li>Jot</li>
+        <li>Mention</li>
+      </ul>
+    </div>
   </body>
 </html>
